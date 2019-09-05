@@ -15,6 +15,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_main);
 
         mWebView = findViewById(R.id.activity_main_webview);
@@ -26,9 +29,13 @@ public class MainActivity extends Activity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+        // "nickname": "TESTF0NWRKBJ",
+        // "password": "qatest345",
+
+
         // REMOTE RESOURCE
-         mWebView.loadUrl("https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438050834-36b33107-3f50-4678-ae51-d5b1eda5c96e");
-         mWebView.setWebViewClient(new MyWebViewClient());
+         mWebView.loadUrl("https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438050834-d48205b7-e2d4-4ee6-bd99-78e292492061");
+         mWebView.setWebViewClient(new WebViewClient());
 
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");
