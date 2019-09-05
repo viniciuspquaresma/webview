@@ -27,8 +27,8 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
 
         // REMOTE RESOURCE
-        // mWebView.loadUrl("http://example.com");
-        // mWebView.setWebViewClient(new MyWebViewClient());
+         mWebView.loadUrl("https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=438050834-36b33107-3f50-4678-ae51-d5b1eda5c96e");
+         mWebView.setWebViewClient(new MyWebViewClient());
 
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");
